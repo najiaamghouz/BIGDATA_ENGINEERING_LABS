@@ -38,20 +38,98 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>edu.ensias.hadoop.hdfslab.HadoopFileStatus</mainClass>
-                        </manifest>
-                    </archive>
-                    <finalName>HadoopFileStatus</finalName>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
+
+    <!-- Profils pour compiler différents JAR -->
+    <profiles>
+        <!-- Profil pour HadoopFileStatus -->
+        <profile>
+            <id>HadoopFileStatus</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.2.2</version>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>edu.ensias.hadoop.hdfslab.HadoopFileStatus</mainClass>
+                                </manifest>
+                            </archive>
+                            <finalName>HadoopFileStatus</finalName>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Profil pour ReadHDFS -->
+        <profile>
+            <id>ReadHDFS</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.2.2</version>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>edu.ensias.hadoop.hdfslab.ReadHDFS</mainClass>
+                                </manifest>
+                            </archive>
+                            <finalName>ReadHDFS</finalName>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+      
+        <profile>
+            <id>WriteHDFS</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.2.2</version>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>edu.ensias.hadoop.hdfslab.WriteHDFS</mainClass>
+                                </manifest>
+                            </archive>
+                            <finalName>WriteHDFS</finalName>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+       
+        <profile>
+            <id>WordCount</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.2.2</version>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>edu.ensias.hadoop.mapreducelab.WordCount</mainClass>
+                                </manifest>
+                            </archive>
+                            <finalName>WordCount</finalName>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

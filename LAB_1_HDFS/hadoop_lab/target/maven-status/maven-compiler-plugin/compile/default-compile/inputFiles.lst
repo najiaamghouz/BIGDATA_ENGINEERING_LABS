@@ -1,4 +1,6 @@
-C:\Users\hp\Desktop\BigdataLabs\hadoop_lab\src\main\java\edu\ensias\hadoop\mapreducelab\IntSumReducer.java
-C:\Users\hp\Desktop\BigdataLabs\hadoop_lab\src\main\java\edu\ensias\hadoop\hdfslab\HadoopFileStatus.java
-C:\Users\hp\Desktop\BigdataLabs\hadoop_lab\src\main\java\edu\ensias\hadoop\mapreducelab\WordCount.java
-C:\Users\hp\Desktop\BigdataLabs\hadoop_lab\src\main\java\edu\ensias\hadoop\mapreducelab\TokenizerMapper.java
+C:\Users\hp\Desktop\BigdataLabs\LAB_1_HDFS\hadoop_lab\src\main\java\edu\ensias\hadoop\mapreducelab\IntSumReducer.java
+C:\Users\hp\Desktop\BigdataLabs\LAB_1_HDFS\hadoop_lab\src\main\java\edu\ensias\hadoop\hdfslab\HadoopFileStatus.java
+C:\Users\hp\Desktop\BigdataLabs\LAB_1_HDFS\hadoop_lab\src\main\java\edu\ensias\hadoop\hdfslab\WriteHDFS.java
+C:\Users\hp\Desktop\BigdataLabs\LAB_1_HDFS\hadoop_lab\src\main\java\edu\ensias\hadoop\mapreducelab\WordCount.java
+C:\Users\hp\Desktop\BigdataLabs\LAB_1_HDFS\hadoop_lab\src\main\java\edu\ensias\hadoop\hdfslab\ReadHDFS.java
+C:\Users\hp\Desktop\BigdataLabs\LAB_1_HDFS\hadoop_lab\src\main\java\edu\ensias\hadoop\mapreducelab\TokenizerMapper.java
